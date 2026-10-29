@@ -1,6 +1,5 @@
-# Licensing
+# 许可
 
-License names used in this document are as per [SPDX License
-List](https://spdx.org/licenses/).
+本文档使用的许可证名称遵循 [SPDX 许可证列表](https://spdx.org/licenses/)。
 
-The default license for this project is [AGPL-3.0-only](LICENSE).
+本项目的默认许可证为 [AGPL-3.0-only](LICENSE)。

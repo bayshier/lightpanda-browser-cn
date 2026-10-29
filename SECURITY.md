@@ -1,11 +1,11 @@
-# Reporting security issues
+# 报告安全问题
 
-## Supported Versions
+## 支持的版本
 
-Security fixes are applied to the latest `main` branch.
+安全修复应用于最新的 `main` 分支。
 
-## Reporting a Vulnerability
+## 报告漏洞
 
-Please **DO NOT** file a public issue, instead send your report privately to security@lightpanda.io.
+请**不要**提交公开 issue，改为将报告私密发送至 security@lightpanda.io。
 
-Security reports are greatly appreciated and we will publicly thank you for it, although we keep your name confidential if you request it.
+安全报告将不胜感激，我们会公开致谢；如你要求，也可以对你的姓名保密。

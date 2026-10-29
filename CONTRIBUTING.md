@@ -1,35 +1,33 @@
-# Contributing
+# 参与贡献
 
-Lightpanda accepts pull requests through GitHub.
+Lightpanda 通过 GitHub 接收 pull request。
 
-## Development
+## 开发
 
-- Run the tests: `make test`
-- Check formatting: `zig fmt --check ./*.zig ./**/*.zig`
+- 运行测试：`make test`
+- 检查格式：`zig fmt --check ./*.zig ./**/*.zig`
 
-See [AGENTS.md](AGENTS.md) for the full set of test, formatting, and code conventions (test filters, the leak-detection invariant, `@import` alias case, struct-init inference).
+测试、格式化与代码约定的完整集合（测试过滤器、泄漏检测不变式、`@import` 别名大小写、struct-init 推断）见 [AGENTS.md](AGENTS.md)。
 
-### Skip the V8 source build
+### 跳过 V8 源码编译
 
-By default the build compiles V8 from source, which takes several minutes. Run
-`make download-v8` once to fetch the matching prebuilt libraries from the
-[`zig-v8-fork`](https://github.com/lightpanda-io/zig-v8-fork/releases) releases
-instead; later `make build` / `make test` pick them up automatically. On Linux
-x86_64 this includes the shared flavor (`libc_v8.so`) used by `-Ddev_fast`
-builds (defaults to true). Pass `-Ddev_fast=false` to get a static-V8 debug
-build instead.
+默认情况下，构建会从源码编译 V8，需要数分钟。执行一次
+`make download-v8`，改为从
+[`zig-v8-fork`](https://github.com/lightpanda-io/zig-v8-fork/releases)
+的 release 拉取匹配的预编译库；之后 `make build` / `make test` 会自动使用它们。在 Linux
+x86_64 上还包括 `-Ddev_fast` 构建（默认开启）所用的共享版本
+（`libc_v8.so`）。传 `-Ddev_fast=false` 则改为静态链接 V8 的调试构建。
 
-## Before opening a PR
+## 提 PR 之前
 
-- [ ] Tests pass (`make test`).
-- [ ] Formatting is clean (`zig fmt --check ./*.zig ./**/*.zig`).
-- [ ] CLA signed (see below).
+- [ ] 测试通过（`make test`）。
+- [ ] 格式检查干净（`zig fmt --check ./*.zig ./**/*.zig`）。
+- [ ] 已签署 CLA（见下文）。
 
 ## CLA
 
-You have to sign our [CLA](CLA.md) during your first pull request process
-otherwise we're not able to accept your contributions.
+首次提交 pull request 时必须签署我们的 [CLA](CLA.md)，
+否则我们无法接收你的贡献。
 
-The process signature uses the [CLA assistant
-lite](https://github.com/marketplace/actions/cla-assistant-lite). You can see
-an example of the process in [#303](https://github.com/lightpanda-io/browser/pull/303).
+签名流程使用 [CLA assistant
+lite](https://github.com/marketplace/actions/cla-assistant-lite)。流程示例见 [#303](https://github.com/lightpanda-io/browser/pull/303)。
